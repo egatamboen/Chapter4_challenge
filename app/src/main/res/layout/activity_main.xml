@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img_batukiri"
+        android:background="#ffff"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/img_guntingkiri"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_batu" />
+
+    <ImageView
+        android:id="@+id/img_batukanan"
+        android:background="@color/white"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/img_guntingkanan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_batu" />
+
+    <ImageView
+        android:id="@+id/img_guntingkanan"
+        android:background="@color/white"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/img_kertaskanan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_gunting" />
+
+    <ImageView
+        android:id="@+id/img_guntingkiri"
+        android:background="@color/white"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/img_kertaskiri"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_gunting" />
+
+    <ImageView
+        android:id="@+id/img_kertaskiri"
+        android:background="@color/white"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="512dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_kertas" />
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_kiyo_2" />
+
+    <ImageView
+        android:id="@+id/img_kertaskanan"
+        android:background="@color/white"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="516dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_kertas" />
+
+    <TextView
+        android:id="@+id/view_result"
+        android:text="VS"
+        android:textColor="#ffff"
+        android:textAlignment="center"
+        android:textSize="65sp"
+        android:textStyle="bold"
+        android:layout_width="149dp"
+        android:layout_height="wrap_content"
+        android:background="#FF5722"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.564" />
+
+    <ImageView
+        android:id="@+id/img_player1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="-35dp"
+        app:layout_constraintBottom_toTopOf="@+id/img_batukiri"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_logo"
+        app:layout_constraintVertical_bias="0.716"
+        app:srcCompat="@drawable/ic_kiyo_3" />
+
+    <ImageView
+        android:id="@+id/img_com"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="-35dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/img_batukanan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_logo"
+        app:layout_constraintVertical_bias="0.716"
+        app:srcCompat="@drawable/ic_kiyo_4" />
+
+    <ImageView
+        android:id="@+id/img_refresh"
+        android:background="@color/white"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_kertaskanan"
+        app:layout_constraintVertical_bias="0.547"
+        app:srcCompat="@drawable/ic_refresh"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
